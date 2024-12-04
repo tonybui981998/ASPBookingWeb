@@ -1,7 +1,26 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67A074EF-10B3-4A27-A355-812410EF7BCD}|BookingWebApp.Infrastructure\\BookingWebApp.Infrastructure.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Infrastructure\\Migrations\\20241204084008_seedVillaToDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A074EF-10B3-4A27-A355-812410EF7BCD}|BookingWebApp.Infrastructure\\BookingWebApp.Infrastructure.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp.infrastructure\\migrations\\20241204083154_modifynameinvillatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A0ED88-9505-4CAB-976F-485CA5043750}|BookingWebApp.Domain\\BookingWebApp.Domain.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp.domain\\entities\\villa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Infrastructure\\Migrations\\20241204082758_addVillaToDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +28,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +45,84 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20241204084008_seedVillaToDb.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Infrastructure\\Migrations\\20241204084008_seedVillaToDb.cs",
+              "RelativeDocumentMoniker": "BookingWebApp.Infrastructure\\Migrations\\20241204084008_seedVillaToDb.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Infrastructure\\Migrations\\20241204084008_seedVillaToDb.cs",
+              "RelativeToolTip": "BookingWebApp.Infrastructure\\Migrations\\20241204084008_seedVillaToDb.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T08:40:08.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BookingWebApp.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "BookingWebApp.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAB8AAAAAnJmZmVkpwDAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T08:34:07.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20241204083154_ModifyNameInVillaTable.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Infrastructure\\Migrations\\20241204083154_ModifyNameInVillaTable.cs",
+              "RelativeDocumentMoniker": "BookingWebApp.Infrastructure\\Migrations\\20241204083154_ModifyNameInVillaTable.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Infrastructure\\Migrations\\20241204083154_ModifyNameInVillaTable.cs",
+              "RelativeToolTip": "BookingWebApp.Infrastructure\\Migrations\\20241204083154_ModifyNameInVillaTable.cs",
+              "ViewState": "AQIAABoAAADAZmZmZiYswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T08:31:54.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Villa.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Domain\\Entities\\Villa.cs",
+              "RelativeDocumentMoniker": "BookingWebApp.Domain\\Entities\\Villa.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Domain\\Entities\\Villa.cs",
+              "RelativeToolTip": "BookingWebApp.Domain\\Entities\\Villa.cs",
+              "ViewState": "AQIAAAgAAAAASjMzMzP7vxkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T08:31:01.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20241204082758_addVillaToDb.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Infrastructure\\Migrations\\20241204082758_addVillaToDb.cs",
+              "RelativeDocumentMoniker": "BookingWebApp.Infrastructure\\Migrations\\20241204082758_addVillaToDb.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Infrastructure\\Migrations\\20241204082758_addVillaToDb.cs",
+              "RelativeToolTip": "BookingWebApp.Infrastructure\\Migrations\\20241204082758_addVillaToDb.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T08:27:58.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "BookingWebApp\\appsettings.json",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\appsettings.json",
+              "RelativeToolTip": "BookingWebApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-04T08:24:54.189Z",
+              "EditorCaption": ""
             }
           ]
         },

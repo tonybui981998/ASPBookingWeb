@@ -1,0 +1,15 @@
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\bin\Debug\net8.0\BookingWebApp.Application.deps.json
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\bin\Debug\net8.0\BookingWebApp.Application.runtimeconfig.json
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\bin\Debug\net8.0\BookingWebApp.Application.dll
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\bin\Debug\net8.0\BookingWebApp.Application.pdb
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingWebApp.Application.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingWebApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingWebApp.Application.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingWebApp.Application.AssemblyInfo.cs
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingWebApp.Application.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingWebApp.Application.sourcelink.json
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingWebApp.Application.dll
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\refint\BookingWebApp.Application.dll
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingWebApp.Application.pdb
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingWebApp.Application.genruntimeconfig.cache
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\ref\BookingWebApp.Application.dll
