@@ -13,6 +13,62 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\Room Images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\Room Images\\1.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\Room Images\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\Room Images\\2.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\Room Images\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\Room Images\\3.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\Room Images\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\Room Images\\4.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\Room Images\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\Room Images\\5.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\Room Images\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\Room Images\\6.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\Room Images\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\Room Images\\7.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\accessDenied.jpg",
+      "PackagePath": "staticwebassets\\images\\accessDenied.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\notfound.jpg",
+      "PackagePath": "staticwebassets\\images\\notfound.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\orderConfirmed.jpg",
+      "PackagePath": "staticwebassets\\images\\orderConfirmed.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\placeholder.png",
+      "PackagePath": "staticwebassets\\images\\placeholder.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\resort.png",
+      "PackagePath": "staticwebassets\\images\\resort.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\slide1.jpg",
+      "PackagePath": "staticwebassets\\images\\slide1.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\slide2.jpg",
+      "PackagePath": "staticwebassets\\images\\slide2.jpg"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

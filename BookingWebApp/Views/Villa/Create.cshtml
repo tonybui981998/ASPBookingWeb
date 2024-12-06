@@ -1,0 +1,62 @@
+﻿@model Villa
+
+<div class="w-100 card border-0 p-4">
+    <div class="card-header bg-success bg-gradient ml-0 py-0">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="py-2"> Create Villa</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body border p-4">
+        <form method="post" class="row">
+            <div class="p-3 ">
+                <div asp-validation-summary="All" class="text-danger fs-4"></div>
+                <div class="col-12 py-1">
+                   <label asp-for="Name" class="pb-1"></label>
+                   <input asp-for="@Model.Name" class="border shadow form-control py-3"/>
+                   @* <span asp-validation-for="Name" class="text-danger"></span> *@
+                </div>
+                <div class="col-12 py-2">
+                    <label asp-for="Description" class="pb-1"></label>
+                    <input asp-for="@Model.Description" class="border shadow form-control py-3" />
+                   @*  <span asp-validation-for="Description" class="text-danger"></span> *@
+                </div>
+                  <div class="col-12 py-2">
+                    <label asp-for="Price" class="pb-1"></label>
+                    <input asp-for="@Model.Price" class="border shadow form-control py-3" />
+                   @*  <span asp-validation-for="Price" class="text-danger"></span> *@
+                </div>
+                  <div class="col-12 py-2">
+                    <label asp-for="Sqft" class="pb-1"></label>
+                    <input asp-for="@Model.Sqft" class="border shadow form-control py-3" />
+                   @*  <span asp-validation-for="Sqft" class="text-danger"></span> *@
+                </div>
+                  <div class="col-12 py-2">
+                    <label asp-for="Occupancy" class="pb-1"></label>
+                    <input asp-for="@Model.Occupancy" class="border shadow form-control py-3" />
+                   @*  <span asp-validation-for="Occupancy" class="text-danger"></span> *@
+                </div>
+                  <div class="col-12 py-2">
+                    <label asp-for="ImageUrl" class="pb-1"></label>
+                    <input asp-for="@Model.ImageUrl" class="border shadow form-control py-3" />
+                    @* <span asp-validation-for="ImageUrl" class="text-danger"></span> *@
+                </div>
+                <div class="row pt-2">
+                    <div class="col-6 col-md-3 pt-2">
+                        <button type="submit" class="w-100 btn border btn-success py-2 fs-5"> <i class="bi bi-check"></i>Submit</button>
+                    </div>
+                    <div class="col-6 col-md-3 pt-2">
+                        <button asp-controller="Villa" asp-action="Index" class="btn border w-100 btn-info fs-5"><i class="bi bi-x-circle-fill"></i>Back</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts{
+    @{
+    <partial name="_ValidationScriptsPartial"/>
+}
+}
