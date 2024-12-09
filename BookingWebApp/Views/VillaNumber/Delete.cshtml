@@ -1,0 +1,31 @@
+﻿@model VillaNumber
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 bg-success fs-3 text-center">Delete Villa</div>
+        <div class="col-12 border">
+            <table class="table table-bordered w-100">
+                <thead>
+                    <tr>
+                        <th>Villa-Number</th>
+                        <th>VillaId</th>
+                        <th>Special Details</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                 <tr>
+                     <td>@Model.Villa_Number</td>
+                     <td>@Model.VillaId</td>
+                     <td>@Model.SpecialDetails</td>
+                 </tr>
+                 
+                </tbody>
+            </table>
+           <div class="row">
+               <div class="col-6">
+                    <button asp-action="Index" asp-controller="VillaNumber">Back</button>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
