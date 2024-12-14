@@ -4,7 +4,7 @@
         <div class="col-12 text-center p-4 fs-4  bg-success">Villa Number</div>
      <div class="row">
          <div class="col-6 pt-3 pb-3">
-             <a asp-action="Create" asp-controller="VillaNumber" class="w-50 fs-6 btn btn-secondary">Add new Villa</a>
+                <a asp-action="Create" asp-controller="VillaNumber" class="w-50 fs-6 btn btn-secondary"><i class="bi bi-plus-lg"></i>Add new Villa</a>
          </div>
      </div>
 
@@ -14,7 +14,7 @@
                 <thead>
                     <tr >
                         <th scope="col">Villa-Number</th>
-                        <th scope="col">VillaId</th>
+                        <th scope="col">Villa Name</th>
                         <th scope="col">Special Details</th>
                         <th scope="col">Action</th>
                     </tr>
@@ -24,11 +24,11 @@
                     {
                         <tr class="border ">
                             <td>@obj.Villa_Number</td>
-                            <td>@obj.VillaId</td>
+                            <td>@obj.Villa.Name</td>
                             <td>@obj.SpecialDetails</td>
                             <td>
                                 <div class="w-75" role="group">
-                                    <a asp-action="Update" asp-controller="VillaNumber" asp-route-villaId="@obj.Villa_Number" class="text-center btn btn-warning mx-2"><i class="bi bi-pencil"></i></a>
+                                    <a asp-action="Edit" asp-controller="VillaNumber" asp-route-villaId="@obj.Villa_Number" class="text-center btn btn-warning mx-2"><i class="bi bi-pencil"></i></a>
                                     <a asp-action="Delete" asp-controller="VillaNumber" asp-route-VillaId="@obj.Villa_Number" class="text-center btn btn-danger "><i class="bi bi-trash3"></i></a>
                                 </div>
                             </td>

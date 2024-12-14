@@ -171,3 +171,7 @@
 \\Mac\Home\Desktop\BookingWebApp\BookingWebApp\obj\Debug\net8.0\BookingW.676FC2C9.Up2Date
 \\Mac\Home\Desktop\BookingWebApp\BookingWebApp\bin\Debug\net8.0\BookingWebApp.Domain.dll
 \\Mac\Home\Desktop\BookingWebApp\BookingWebApp\bin\Debug\net8.0\BookingWebApp.Domain.pdb
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp\bin\Debug\net8.0\Validation.dll
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp\obj\Debug\net8.0\BookingWebApp.MvcApplicationPartsAssemblyInfo.cs
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp\bin\Debug\net8.0\BookingWebApp.Application.dll
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp\bin\Debug\net8.0\BookingWebApp.Application.pdb

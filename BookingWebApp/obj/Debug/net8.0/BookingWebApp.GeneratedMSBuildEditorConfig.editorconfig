@@ -26,6 +26,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = \\Mac\Home\Desktop\BookingWebApp\BookingWebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[//Mac/Home/Desktop/BookingWebApp/BookingWebApp/Views/Amenity/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1lbml0eVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//Mac/Home/Desktop/BookingWebApp/BookingWebApp/Views/Amenity/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1lbml0eVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//Mac/Home/Desktop/BookingWebApp/BookingWebApp/Views/Amenity/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1lbml0eVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//Mac/Home/Desktop/BookingWebApp/BookingWebApp/Views/Amenity/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1lbml0eVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [//Mac/Home/Desktop/BookingWebApp/BookingWebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -52,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [//Mac/Home/Desktop/BookingWebApp/BookingWebApp/Views/VillaNumber/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFOdW1iZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//Mac/Home/Desktop/BookingWebApp/BookingWebApp/Views/VillaNumber/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFOdW1iZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [//Mac/Home/Desktop/BookingWebApp/BookingWebApp/Views/VillaNumber/Index.cshtml]

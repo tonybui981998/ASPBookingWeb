@@ -1,0 +1,46 @@
+﻿@model VillaNumberVM
+<div class="container">
+    <div class="row">
+        <div class="bg-success text-center fs-4 p-3 border rounded">
+           Edit Villa
+        </div>
+    </div>
+    <div class="row">
+        <form method="post">
+            <input hidden asp-for="VillaNumber.Villa_Number"/>
+            
+            <div asp-validation-summary="All" class="text-danger fs-4"></div>
+           
+            <div class="py-3">
+                <label class="col-12" asp-for="VillaNumber.Villa_Number"></label>
+                
+                <input  disabled class="col-12 mt-1 p-2" asp-for="VillaNumber.Villa_Number" />
+            </div>
+            <div class="">
+                <label class="col-12" asp-for="VillaNumber.VillaId "></label>
+                <select class="col-12 form-select" asp-for="VillaNumber.VillaId" asp-items="@Model.VillaLst"></select>
+            </div>
+            <div class="py-3">
+                <label class="col-12" asp-for="VillaNumber.SpecialDetails"></label>
+                <input  class="col-12 mt-1 p-2" asp-for="VillaNumber.SpecialDetails" />
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class=" btn btn-primary w-100">Submit</button>
+
+                </div>
+                <div class="col-6 ">
+                    <button asp-action="Index" asp-controller="VillaNumber" formnovalidate class="btn btn-info w-100">Back</button>
+
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

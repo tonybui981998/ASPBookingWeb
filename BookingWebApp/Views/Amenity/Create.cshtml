@@ -1,0 +1,41 @@
+﻿@model BookingWebApp.ViewModels.AmenityViewModel
+<div class="container">
+    <div class="row">
+        <div class="bg-success text-center fs-4 p-3 border rounded">
+            Create New Amenity
+        </div>
+        <div class="row">
+            <form method="post">
+                <div asp-validation-summary="All" class="text-danger fs-4"></div>
+                <div class="py-3">
+                    <label class="col-12" asp-for="Amenity.Name"></label>
+                    <input required class="col-12 mt-1 p-2" asp-for="Amenity.Name" />
+                </div>
+                <div class="">
+                    <label class="col-12" asp-for="Amenity.VillaId"></label>
+                    <select class="form-select shadow" asp-for="Amenity.VillaId" asp-items="@Model.VillaList"></select>
+                </div>
+                <div class="py-3">
+                    <label class="col-12" asp-for="Amenity.Description"></label>
+                    <input required class="col-12 mt-1 p-2" asp-for="Amenity.Description" />
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <button type="submit" class=" btn btn-primary w-100">Submit</button>
+
+                    </div>
+                    <div class="col-6 ">
+                        <button asp-action="Index" asp-controller="Amenity" formnovalidate class="btn btn-info w-100">Back</button>
+
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    @section Scripts {
+        @{
+            <partial name="_ValidationScriptsPartial" />
+        }
+    }

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<BookingWebApp.Domain.Entities.Amenity>
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center p-4 fs-4  bg-success">Amenity List</div>
+        <div class="row">
+            <div class="col-6 pt-3 pb-3">
+                <a asp-action="Create" asp-controller="Amenity" class="w-50 fs-6 btn btn-secondary"><i class="bi bi-plus-lg"></i>Add new Amenity</a>
+            </div>
+        </div>
+
+
+        <div class="border">
+            <table class="table mt-5 table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Amenity Name</th>
+                        <th>Villa Name</th>
+                        <th scope="col">Description</th>
+                     
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody class="border">
+                    @foreach (var obj in Model)
+                    {
+                        <tr class="border ">
+                            <td>@obj.Name</td>
+                
+                            <td>@obj.Villa.Name</td>
+                            <td>@obj.Description</td>
+                            
+                            <td>
+                                <div class="w-75" role="group">
+                                    <a asp-action="Edit" asp-controller="Amenity" asp-route-villaId="@obj.Id" class="text-center btn btn-warning mx-2"><i class="bi bi-pencil"></i></a>
+                                    <a asp-action="Delete" asp-controller="Amenity" asp-route-VillaId="@obj.Id" class="text-center btn btn-danger "><i class="bi bi-trash3"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+</div>

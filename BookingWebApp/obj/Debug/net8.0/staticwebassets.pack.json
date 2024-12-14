@@ -41,6 +41,14 @@
       "PackagePath": "staticwebassets\\images\\Room Images\\7.jpg"
     },
     {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\Villa\\cfbf2026-9dbe-438b-8799-fd7aec0a7bfb.jpg",
+      "PackagePath": "staticwebassets\\images\\Villa\\cfbf2026-9dbe-438b-8799-fd7aec0a7bfb.jpg"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\Villa\\f002fcfa-298f-41ee-ac96-34f5a363ea94.jpg",
+      "PackagePath": "staticwebassets\\images\\Villa\\f002fcfa-298f-41ee-ac96-34f5a363ea94.jpg"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\accessDenied.jpg",
       "PackagePath": "staticwebassets\\images\\accessDenied.jpg"
     },

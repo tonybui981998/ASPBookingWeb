@@ -11,48 +11,55 @@
     <div class="card-body border p-4">
         <form method="post" class="row">
             <input asp-for="Id" hidden />
-            <div class="p-3 ">
-              
-                <div class="col-12 py-1">
-                    <label asp-for="Name" class="pb-1"></label>
-                    <input asp-for="@Model.Name" disabled class="border shadow form-control py-3" />
-                    @* <span asp-validation-for="Name" class="text-danger"></span> *@
-                </div>
-                <div class="col-12 py-2">
-                    <label asp-for="Description" class="pb-1"></label>
-                    <input asp-for="@Model.Description" disabled class="border shadow form-control py-3" />
-                    @*  <span asp-validation-for="Description" class="text-danger"></span> *@
-                </div>
-                <div class="col-12 py-2">
-                    <label asp-for="Price" class="pb-1"></label>
-                    <input asp-for="@Model.Price" disabled class="border shadow form-control py-3" />
-                    @*  <span asp-validation-for="Price" class="text-danger"></span> *@
-                </div>
-                <div class="col-12 py-2">
-                    <label asp-for="Sqft" class="pb-1"></label>
-                    <input asp-for="@Model.Sqft" disabled class="border shadow form-control py-3" />
-                    @*  <span asp-validation-for="Sqft" class="text-danger"></span> *@
-                </div>
-                <div class="col-12 py-2">
-                    <label asp-for="Occupancy" class="pb-1"></label>
-                    <input asp-for="@Model.Occupancy" disabled class="border shadow form-control py-3" />
-                    @*  <span asp-validation-for="Occupancy" class="text-danger"></span> *@
-                </div>
-                <div class="col-12 py-2">
-                    <label asp-for="ImageUrl" class="pb-1"></label>
-                    <input asp-for="@Model.ImageUrl" disabled class="border shadow form-control py-3" />
-                    @* <span asp-validation-for="ImageUrl" class="text-danger"></span> *@
-                </div>
-                <div class="row pt-2">
-                    <div class="col-6 col-md-3 pt-2">
-                        <button type="submit" class="w-100 btn border btn-danger py-2 fs-5"> <i class="bi bi-check"></i>Delete</button>
-                    </div>
-                    <div class="col-6 col-md-3 pt-2">
-                        <button asp-controller="Villa" asp-action="Index" class="btn border w-100 btn-info fs-5"><i class="bi bi-x-circle-fill"></i>Back</button>
-                    </div>
-                </div>
 
+            <div class="col-9">
+                <div class="p-3 ">
+
+                    <div class="col-12 py-1">
+                        <label asp-for="Name" class="pb-1"></label>
+                        <input asp-for="@Model.Name" disabled class="border shadow form-control py-3" />
+                        @* <span asp-validation-for="Name" class="text-danger"></span> *@
+                    </div>
+                    <div class="col-12 py-2">
+                        <label asp-for="Description" class="pb-1"></label>
+                        <input asp-for="@Model.Description" disabled class="border shadow form-control py-3" />
+                        @*  <span asp-validation-for="Description" class="text-danger"></span> *@
+                    </div>
+                    <div class="col-12 py-2">
+                        <label asp-for="Price" class="pb-1"></label>
+                        <input asp-for="@Model.Price" disabled class="border shadow form-control py-3" />
+                        @*  <span asp-validation-for="Price" class="text-danger"></span> *@
+                    </div>
+                    <div class="col-12 py-2">
+                        <label asp-for="Sqft" class="pb-1"></label>
+                        <input asp-for="@Model.Sqft" disabled class="border shadow form-control py-3" />
+                        @*  <span asp-validation-for="Sqft" class="text-danger"></span> *@
+                    </div>
+                    <div class="col-12 py-2">
+                        <label asp-for="Occupancy" class="pb-1"></label>
+                        <input asp-for="@Model.Occupancy" disabled class="border shadow form-control py-3" />
+                        @*  <span asp-validation-for="Occupancy" class="text-danger"></span> *@
+                    </div>
+                    <div class="col-12 py-2">
+                        <label asp-for="ImageUrl" class="pb-1"></label>
+                        <input asp-for="@Model.ImageUrl" disabled class="border shadow form-control py-3" />
+                        @* <span asp-validation-for="ImageUrl" class="text-danger"></span> *@
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-6 col-md-3 pt-2">
+                            <button type="submit" class="w-100 btn border btn-danger py-2 fs-5"> <i class="bi bi-check"></i>Delete</button>
+                        </div>
+                        <div class="col-6 col-md-3 pt-2">
+                            <button asp-controller="Villa" asp-action="Index" class="btn border w-100 btn-info fs-5"><i class="bi bi-x-circle-fill"></i>Back</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+        <div class="col-3">
+            <img src="@Model.ImageUrl" width="100%" height="20%" style="border-radius5px; border:1px solid white"  />
+        </div>
+       
         </form>
     </div>
 </div>

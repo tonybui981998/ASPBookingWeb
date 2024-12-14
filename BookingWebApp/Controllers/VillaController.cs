@@ -1,4 +1,5 @@
-﻿using BookingWebApp.Domain.Entities;
+﻿using BookingWebApp.Application.Common.Interfaces;
+using BookingWebApp.Domain.Entities;
 using BookingWebApp.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,17 +10,19 @@ namespace BookingWebApp.Controllers
 {
     public class VillaController : Controller
     {
-        public readonly ApplicationDbContext _context;
+        public readonly IUnitOfWork _unitOfWork;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public VillaController(ApplicationDbContext context)
+        public VillaController(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
+            _webHostEnvironment = webHostEnvironment;
         }
 
 
         public IActionResult Index()
         {
-            var allvilla = _context.Villas.ToList();
+            var allvilla = _unitOfWork.Villa.GetAll();
 
             return View(allvilla);
         }
@@ -39,8 +42,21 @@ namespace BookingWebApp.Controllers
 
             if (ModelState.IsValid)
             {
-                _context.Villas.Add(obj);
-                _context.SaveChanges();
+                if(obj.Image != null)
+                {
+                   string fileName =Guid.NewGuid().ToString() + Path.GetExtension(obj.Image.FileName);
+                    string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, @"images\Villa");
+                   using var fileStream = new FileStream(Path.Combine(imagePath,fileName),FileMode.Create);
+                    obj.Image.CopyTo(fileStream);
+                    obj.ImageUrl = @"\images\Villa\" + fileName;
+
+                }
+                else
+                {
+                    obj.ImageUrl = "http://placehold.co/600x400";
+                }
+                _unitOfWork.Villa.Add(obj);
+                _unitOfWork.Save();
                 TempData["success"] = "the villa create successfully";
                 return RedirectToAction("Index");
             }
@@ -53,7 +69,7 @@ namespace BookingWebApp.Controllers
         }
         public IActionResult Update(int VillaId)
         {
-            Villa? obj = _context.Villas.FirstOrDefault(u => u.Id == VillaId);
+            Villa? obj = _unitOfWork.Villa.Get(u => u.Id == VillaId);
             if (obj == null)
             {
                 return RedirectToAction("Error", "Home");
@@ -69,8 +85,40 @@ namespace BookingWebApp.Controllers
         {
             if (ModelState.IsValid && obj.Id > 0)
             {
-                _context.Villas.Update(obj);
-                _context.SaveChanges();
+                //if (obj.Image != null)
+                //{
+                //    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(obj.Image.FileName);
+                //    string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, @"images\Villa");
+                //    using var fileStream = new FileStream(Path.Combine(imagePath, fileName), FileMode.Create);
+                //    obj.Image.CopyTo(fileStream);
+                //    obj.ImageUrl = @"images\Villa\" + fileName;
+
+                //}
+                //else
+                //{
+                //    obj.ImageUrl = "http://placehold.co/600x400";
+                //}
+                if (obj.Image != null)
+                {
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(obj.Image.FileName);
+                    string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, @"images\Villa");
+                    if (!string.IsNullOrEmpty(obj.ImageUrl))
+                    {
+                        var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, obj.ImageUrl.TrimStart('\\'));
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
+                    using var fileStream = new FileStream(Path.Combine(imagePath, fileName), FileMode.Create);
+                    obj.Image.CopyTo(fileStream);
+                    obj.ImageUrl = @"\images\Villa\" + fileName;
+
+                }
+              
+
+                _unitOfWork.Villa.Update(obj);
+                _unitOfWork.Save();
                 TempData["success"] = "The villa update successfully";
                 return RedirectToAction("Index");
             }
@@ -82,7 +130,7 @@ namespace BookingWebApp.Controllers
         }
         public IActionResult Delete(int VillaId)
         {
-            Villa? obj = _context.Villas.FirstOrDefault(u => u.Id == VillaId);
+            Villa? obj = _unitOfWork.Villa.Get(u => u.Id == VillaId);
             if (obj == null)
             {
                 return RedirectToAction("Error", "Home");
@@ -95,10 +143,18 @@ namespace BookingWebApp.Controllers
         [HttpPost]
         public IActionResult Delete(Villa obj) {
 
-            Villa? objss = _context.Villas.FirstOrDefault(u => u.Id == obj.Id);
-            if (objss is not null) { 
-            _context.Villas.Remove(objss);
-                _context.SaveChanges();
+            Villa? objss = _unitOfWork.Villa.Get (u => u.Id == obj.Id);
+            if (objss is not null) {
+                if (!string.IsNullOrEmpty(objss.ImageUrl))
+                {
+                    var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, objss.ImageUrl.TrimStart('\\'));
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+                _unitOfWork.Villa.Delete(objss);
+                _unitOfWork.Save();
                 TempData["success"] = "The villa has been delete successfully";
                 return RedirectToAction("Index");
             }

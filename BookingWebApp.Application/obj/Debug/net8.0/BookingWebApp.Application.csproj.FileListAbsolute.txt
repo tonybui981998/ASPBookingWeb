@@ -13,3 +13,6 @@
 \\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingWebApp.Application.pdb
 \\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingWebApp.Application.genruntimeconfig.cache
 \\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\ref\BookingWebApp.Application.dll
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\bin\Debug\net8.0\BookingWebApp.Domain.dll
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\bin\Debug\net8.0\BookingWebApp.Domain.pdb
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp.Application\obj\Debug\net8.0\BookingW.2DDEDE3B.Up2Date

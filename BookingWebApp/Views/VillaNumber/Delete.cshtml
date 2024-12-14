@@ -1,39 +1,46 @@
-﻿@model VillaNumber
-<div class="container-fluid">
+﻿@model VillaNumberVM
+<div class="container">
     <div class="row">
-        <div class="col-12 bg-success fs-3 text-center">Delete Villa</div>
-        <div class="col-12 border">
-            <form method="post">
-                <input asp-for="Villa_Number" hidden/>
-                <table class="table table-bordered w-100">
-                    <thead>
-                        <tr>
-                            <th>Villa-Number</th>
-                            <th>VillaId</th>
-                            <th>Special Details</th>
-                        </tr>
-
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>@Model.Villa_Number</td>
-                            <td>@Model.VillaId</td>
-                            <td>@Model.SpecialDetails</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-                
-             <div class="row pt-2">
-                 <div class="col-6 col-md-3 ">
-                     <button type="submit" class="w-100 bg-danger fs-5">submit</button>
-                 </div>
-                    <div class="col-6 col-md-3 ">
-                        <button asp-action ="Index" asp-controller="VillaNumber" class="w-100 bg-info fs-5 ">Back</button>
-                    </div>
-             </div>
-            </form>
-           
+        <div class="bg-success text-center fs-4 p-3 border rounded">
+            Delete Villa
         </div>
     </div>
+    <div class="row">
+        <form method="post">
+            <input hidden asp-for="VillaNumber.Villa_Number" />
+
+            <div asp-validation-summary="All" class="text-danger fs-4"></div>
+
+            <div class="py-3">
+                <label class="col-12" asp-for="VillaNumber.Villa_Number"></label>
+
+                <input disabled class="col-12 mt-1 p-2" asp-for="VillaNumber.Villa_Number" />
+            </div>
+            <div class="">
+                <label class="col-12" asp-for="VillaNumber.VillaId "></label>
+                <select disabled class="col-12 form-select" asp-for="VillaNumber.VillaId" asp-items="@Model.VillaLst"></select>
+            </div>
+            <div class="py-3">
+                <label class="col-12" asp-for="VillaNumber.SpecialDetails"></label>
+                <input disabled class="col-12 mt-1 p-2" asp-for="VillaNumber.SpecialDetails" />
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class=" btn btn-primary w-100">Submit</button>
+
+                </div>
+                <div class="col-6 ">
+                    <button asp-action="Index" asp-controller="VillaNumber" formnovalidate class="btn btn-info w-100">Back</button>
+
+                </div>
+            </div>
+
+
+        </form>
+    </div>
 </div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
