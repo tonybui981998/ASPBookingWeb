@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fx7PiJcFrA/zwieej/HDcTPM3Faow+VsNm24U8Eyvwg=",
+  "Hash": "/pKs3WT1YJgjXAhlV7Uo8qGfayp8e2d5CQn6iCdaEwY=",
   "Source": "BookingWebApp",
   "BasePath": "_content/BookingWebApp",
   "Mode": "Default",
@@ -357,6 +357,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\slide2.jpg"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\Villa\\5145b1d1-8bd6-4f4c-a772-5967630da37b.jpg",
+      "SourceId": "BookingWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\",
+      "BasePath": "_content/BookingWebApp",
+      "RelativePath": "images/Villa/5145b1d1-8bd6-4f4c-a772-5967630da37b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Villa\\5145b1d1-8bd6-4f4c-a772-5967630da37b.jpg"
     },
     {
       "Identity": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\images\\Villa\\cfbf2026-9dbe-438b-8799-fd7aec0a7bfb.jpg",
