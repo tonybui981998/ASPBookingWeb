@@ -1,9 +1,10 @@
-using BookingWebApp.Application.Common.Interfaces;
+﻿using BookingWebApp.Application.Common.Interfaces;
 using BookingWebApp.Infrastructure.Data;
 using BookingWebApp.Infrastructure.Repository;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using BookingWebApp.Domain.Entities;
 
 
 
@@ -13,7 +14,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 var app = builder.Build();
 
@@ -31,6 +33,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication(); // Cần thiết để kích hoạt Identity
 app.UseAuthorization();
 
 app.MapControllerRoute(

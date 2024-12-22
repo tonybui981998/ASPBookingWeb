@@ -175,3 +175,4 @@
 \\Mac\Home\Desktop\BookingWebApp\BookingWebApp\obj\Debug\net8.0\BookingWebApp.MvcApplicationPartsAssemblyInfo.cs
 \\Mac\Home\Desktop\BookingWebApp\BookingWebApp\bin\Debug\net8.0\BookingWebApp.Application.dll
 \\Mac\Home\Desktop\BookingWebApp\BookingWebApp\bin\Debug\net8.0\BookingWebApp.Application.pdb
+\\Mac\Home\Desktop\BookingWebApp\BookingWebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
