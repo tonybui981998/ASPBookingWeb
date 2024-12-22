@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using System.ComponentModel.DataAnnotations;
 
 namespace BookingWebApp.ViewModels
@@ -24,5 +26,9 @@ namespace BookingWebApp.ViewModels
         public string? PhoneNumber { get; set; }
 
         public string? RedirectUrk { get; set; }
+        public string? Role { get; set; }
+
+        [ValidateNever]
+        public IEnumerable<SelectListItem>? RoleList { get; set; }  
     }
 }

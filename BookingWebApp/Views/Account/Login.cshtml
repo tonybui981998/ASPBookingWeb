@@ -18,14 +18,14 @@
            </div>
             <div class="col-12 mt-4  fs-3  btn btn-success border ">Login</div>
 
-            <div class="mt-2">Forgot your Password?</div>
-            <div class="mb-5">Register as a new user</div>
+            <div class="mt-2">Forgot your Password? <span><a asp-action="Register">Click here</a></span></div>
+            <div class="mb-5">Register as a new user <span><a asp-action="Register">Click here</a></span></div>
            
                
            
         </form>
     </div>
 </div>
-@section Script {
-    <partial name="_ValidationScriptPartial" />
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 }

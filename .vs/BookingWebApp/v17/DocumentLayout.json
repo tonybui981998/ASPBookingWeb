@@ -3,25 +3,10 @@
   "WorkspaceRootPath": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63F7E5DC-7F66-4F03-A816-EBFF44DD023F}|BookingWebApp.Application\\BookingWebApp.Application.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp.application\\common\\interfaces\\utlity\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,7 +16,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,88 +36,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterVM.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\ViewModels\\RegisterVM.cs",
-              "RelativeDocumentMoniker": "BookingWebApp\\ViewModels\\RegisterVM.cs",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\ViewModels\\RegisterVM.cs",
-              "RelativeToolTip": "BookingWebApp\\ViewModels\\RegisterVM.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T05:58:49.387Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "BookingWebApp\\Views\\Account\\Register.cshtml",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "BookingWebApp\\Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T05:54:06.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "AccountController.cs",
               "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "BookingWebApp\\Controllers\\AccountController.cs",
               "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Controllers\\AccountController.cs",
               "RelativeToolTip": "BookingWebApp\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAEAAADA/////z8lwCYAAAAVAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwCgAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T05:53:48.358Z"
+              "WhenOpened": "2024-12-22T06:46:49.014Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "BookingWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "BookingWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T05:51:35.058Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BookingWebApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BookingWebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-21T07:39:55.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "BookingWebApp\\Views\\Account\\Login.cshtml",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "BookingWebApp\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-21T07:13:58.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginVM.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\ViewModels\\LoginVM.cs",
-              "RelativeDocumentMoniker": "BookingWebApp\\ViewModels\\LoginVM.cs",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\ViewModels\\LoginVM.cs",
-              "RelativeToolTip": "BookingWebApp\\ViewModels\\LoginVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
+              "DocumentIndex": 1,
+              "Title": "SD.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Application\\Common\\Interfaces\\Utlity\\SD.cs",
+              "RelativeDocumentMoniker": "BookingWebApp.Application\\Common\\Interfaces\\Utlity\\SD.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Application\\Common\\Interfaces\\Utlity\\SD.cs",
+              "RelativeToolTip": "BookingWebApp.Application\\Common\\Interfaces\\Utlity\\SD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:09:13.238Z"
+              "WhenOpened": "2024-12-22T06:45:26.772Z",
+              "EditorCaption": ""
             }
           ]
         },

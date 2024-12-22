@@ -1,8 +1,10 @@
 ﻿using BookingWebApp.Application.Common.Interfaces;
+using BookingWebApp.Application.Common.Interfaces.Utlity;
 using BookingWebApp.Domain.Entities;
 using BookingWebApp.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BookingWebApp.Controllers
 {
@@ -22,13 +24,13 @@ namespace BookingWebApp.Controllers
             _userManager = userManager;
             _unitOfWork = unitOfWork;
             _signInManager = signInManager;
-           
+
         }
         public IActionResult Login(string returnUrl = null)
         {
-            returnUrl??= Url.Content("~/");
+            returnUrl ??= Url.Content("~/");
 
-            LoginVM loginVM = new ()
+            LoginVM loginVM = new()
             {
                 RedirectUrl = returnUrl,
             };
@@ -36,7 +38,52 @@ namespace BookingWebApp.Controllers
         }
         public IActionResult Register()
         {
+            if (!_roleManager.RoleExistsAsync(SD.Role_Admin).GetAwaiter().GetResult())
+            {
+                {
+                    _roleManager.CreateAsync(new IdentityRole(SD.Role_Admin)).Wait();
+                    _roleManager.CreateAsync(new IdentityRole(SD.Role_Customer)).Wait();
+                }
+              
+            }
+            RegisterVM registerVM = new()
+            {
+                RoleList = _roleManager.Roles.Select(x => new SelectListItem
+                {
+                    Text = x.Name,
+                    Value = x.Name,
+                })
+            };
+            return View(registerVM);
+        }
+        [HttpPost]
+        public IActionResult Register(RegisterVM registerVM)
+        {
+            ApplicationUser user = new()
+            {
+                Name = registerVM.Name,
+                Email = registerVM.Email,
+                PhoneNumber = registerVM.PhoneNumber,
+                NormalizedEmail = registerVM.Email.ToUpper(),
+                EmailConfirmed = true,
+                UserName = registerVM.Name,
+                CreatedAt = DateTime.Now
+
+
+            };
+            var result = _userManager.CreateAsync(user,registerVM.Password).GetAwaiter().GetResult();
+            if (result.Succeeded) {
+                if (!string.IsNullOrEmpty(registerVM.Role))
+                {
+                    _userManager.AddToRoleAsync(user, registerVM.Role).GetAwaiter().GetResult();
+                }
+                else
+                {
+                    _userManager.AddToRoleAsync(user,SD.Role_Customer).GetAwaiter().GetResult();
+                }
+            }
             return View();
         }
     }
+
 }
