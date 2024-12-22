@@ -6,6 +6,12 @@
       "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63F7E5DC-7F66-4F03-A816-EBFF44DD023F}|BookingWebApp.Application\\BookingWebApp.Application.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp.application\\common\\interfaces\\utlity\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -16,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,20 +42,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "BookingWebApp\\Views\\Account\\Register.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "BookingWebApp\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T06:49:15.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterVM.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\ViewModels\\RegisterVM.cs",
+              "RelativeDocumentMoniker": "BookingWebApp\\ViewModels\\RegisterVM.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\ViewModels\\RegisterVM.cs",
+              "RelativeToolTip": "BookingWebApp\\ViewModels\\RegisterVM.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T06:49:03.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "BookingWebApp\\Controllers\\AccountController.cs",
               "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Controllers\\AccountController.cs",
               "RelativeToolTip": "BookingWebApp\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwCgAAAA7AAAA",
+              "ViewState": "AQIAACgAAAAANDMzM3MlwDYAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T06:46:49.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SD.cs",
               "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Application\\Common\\Interfaces\\Utlity\\SD.cs",
               "RelativeDocumentMoniker": "BookingWebApp.Application\\Common\\Interfaces\\Utlity\\SD.cs",
