@@ -44,7 +44,7 @@ namespace BookingWebApp.Controllers
                     _roleManager.CreateAsync(new IdentityRole(SD.Role_Admin)).Wait();
                     _roleManager.CreateAsync(new IdentityRole(SD.Role_Customer)).Wait();
                 }
-              
+
             }
             RegisterVM registerVM = new()
             {
@@ -57,7 +57,7 @@ namespace BookingWebApp.Controllers
             return View(registerVM);
         }
         [HttpPost]
-        public IActionResult Register(RegisterVM registerVM)
+        public async Task<IActionResult> Register(RegisterVM registerVM)
         {
             ApplicationUser user = new()
             {
@@ -71,7 +71,7 @@ namespace BookingWebApp.Controllers
 
 
             };
-            var result = _userManager.CreateAsync(user,registerVM.Password).GetAwaiter().GetResult();
+            var result = _userManager.CreateAsync(user, registerVM.Password).GetAwaiter().GetResult();
             if (result.Succeeded) {
                 if (!string.IsNullOrEmpty(registerVM.Role))
                 {
@@ -79,11 +79,52 @@ namespace BookingWebApp.Controllers
                 }
                 else
                 {
-                    _userManager.AddToRoleAsync(user,SD.Role_Customer).GetAwaiter().GetResult();
+                    _userManager.AddToRoleAsync(user, SD.Role_Customer).GetAwaiter().GetResult();
+                }
+                await _signInManager.SignInAsync(user, isPersistent: false);
+                if (string.IsNullOrEmpty(registerVM.RedirectUrk))
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    return LocalRedirect(registerVM.RedirectUrk);
+                }
+
+            }
+            foreach (var error in result.Errors) {
+                ModelState.AddModelError("", error.Description);
+            }
+            registerVM.RoleList = _roleManager.Roles.Select(x => new SelectListItem
+            {
+                Text = x.Name,
+                Value = x.Name
+            });
+
+            return View(registerVM);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginVM loginVM)
+        {
+            if (ModelState.IsValid) {
+                var result = await _signInManager.PasswordSignInAsync(loginVM.Email, loginVM.Password, loginVM.RememberMe, lockoutOnFailure: false);
+                if (result.Succeeded)
+                {
+                    if (string.IsNullOrEmpty(loginVM.RedirectUrl))
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        return LocalRedirect(loginVM.RedirectUrl);
+                    }
                 }
             }
-            return View();
-        }
+            else
+            {
+                ModelState.AddModelError("", "Invalid login attempt");
+            }
+                return View(loginVM);
+            }
+        } 
     }
-
-}
