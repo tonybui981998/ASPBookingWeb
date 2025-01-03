@@ -72,7 +72,8 @@ namespace BookingWebApp.Controllers
 
             };
             var result = _userManager.CreateAsync(user, registerVM.Password).GetAwaiter().GetResult();
-            if (result.Succeeded) {
+            if (result.Succeeded)
+            {
                 if (!string.IsNullOrEmpty(registerVM.Role))
                 {
                     _userManager.AddToRoleAsync(user, registerVM.Role).GetAwaiter().GetResult();
@@ -92,7 +93,8 @@ namespace BookingWebApp.Controllers
                 }
 
             }
-            foreach (var error in result.Errors) {
+            foreach (var error in result.Errors)
+            {
                 ModelState.AddModelError("", error.Description);
             }
             registerVM.RoleList = _roleManager.Roles.Select(x => new SelectListItem
@@ -106,8 +108,9 @@ namespace BookingWebApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM loginVM)
         {
-            if (ModelState.IsValid) {
-                var result = await _signInManager.PasswordSignInAsync(loginVM.Email, loginVM.Password, loginVM.RememberMe, lockoutOnFailure: false);
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(loginVM.UserName, loginVM.Password, loginVM.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
                     if (string.IsNullOrEmpty(loginVM.RedirectUrl))
@@ -119,12 +122,20 @@ namespace BookingWebApp.Controllers
                         return LocalRedirect(loginVM.RedirectUrl);
                     }
                 }
-            }
-            else
+                  else
             {
                 ModelState.AddModelError("", "Invalid login attempt");
             }
-                return View(loginVM);
             }
-        } 
+          
+            return View(loginVM);
+        }
+        [HttpGet]
+        public async Task< IActionResult> Logout() { 
+
+            await _signInManager.SignOutAsync();
+        return RedirectToAction("Index", "Home");
+        }
+
+    }
     }

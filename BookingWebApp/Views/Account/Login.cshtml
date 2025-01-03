@@ -5,8 +5,8 @@
         <form method="post">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="mt-4">
-                <label class="col-12 mb-2" asp-for="@Model.Email" ></label>
-                <input asp-for="Email" class="form-control col-12 p-2" />
+                <label class="col-12 mb-2" asp-for="@Model.UserName" ></label>
+                <input asp-for="UserName" class="form-control col-12 p-2" />
             </div>
             <div class="mt-4">
                 <label class="col-12 mb-2" asp-for="@Model.Password"></label>
@@ -16,7 +16,7 @@
                <input asp-for ="RememberMe" class="mt-1" type="checkbox"/>
                <label asp-for="RememberMe">Remember me</label>
            </div>
-            <div class="col-12 mt-4  fs-3  btn btn-success border ">Login</div>
+            <button class="col-12 mt-4  fs-3  btn btn-success border " asp-action="Login">Login</button>
 
             <div class="mt-2">Forgot your Password? <span><a asp-action="Register">Click here</a></span></div>
             <div class="mb-5">Register as a new user <span><a asp-action="Register">Click here</a></span></div>
