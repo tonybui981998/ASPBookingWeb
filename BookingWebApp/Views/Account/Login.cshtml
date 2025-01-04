@@ -3,6 +3,7 @@
     <div class="row">
         <div class="col-12 p-3 bg-success text-center fs-4">Login</div>
         <form method="post">
+            <input  asp-for="RedirectUrl" hidden/>
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="mt-4">
                 <label class="col-12 mb-2" asp-for="@Model.UserName" ></label>
@@ -19,7 +20,7 @@
             <button class="col-12 mt-4  fs-3  btn btn-success border " asp-action="Login">Login</button>
 
             <div class="mt-2">Forgot your Password? <span><a asp-action="Register">Click here</a></span></div>
-            <div class="mb-5">Register as a new user <span><a asp-action="Register">Click here</a></span></div>
+            <div class="mb-5">Register as a new user <span><a asp-action="Register" asp-route-returnUrl ="@Model.RedirectUrl" >Click here</a></span></div>
            
                
            

@@ -25,7 +25,7 @@ namespace BookingWebApp.ViewModels
         [Display(Name = "Phone Number")]
         public string? PhoneNumber { get; set; }
 
-        public string? RedirectUrk { get; set; }
+        public string? RedirectUrl { get; set; }
         public string? Role { get; set; }
 
         [ValidateNever]

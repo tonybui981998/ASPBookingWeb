@@ -3,7 +3,9 @@
     <div class="row">
         <div class="col-12 p-3 fs-3 bg-success text-center">Register</div>
         <form method="post">
+            <input  asp-for="RedirectUrl"/>
             <div asp-validation-summary="All" class="text-danger"></div>
+            
             <div>
                 <label class="col-12 mt-2 mb-1" asp-for="Email"></label>
                 <input asp-for="Email"  class="form-control col-12"/>
@@ -38,3 +40,6 @@
         </form>
     </div>
 </div>
+@section Scripts {
+    <partial name ="_ValidationScriptsPartial" />
+}

@@ -1,6 +1,7 @@
 ﻿using BookingWebApp.Application.Common.Interfaces;
 using BookingWebApp.Domain.Entities;
 using BookingWebApp.Infrastructure.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -8,6 +9,7 @@ using System.Reflection.Metadata.Ecma335;
 
 namespace BookingWebApp.Controllers
 {
+    [Authorize]
     public class VillaController : Controller
     {
         public readonly IUnitOfWork _unitOfWork;
