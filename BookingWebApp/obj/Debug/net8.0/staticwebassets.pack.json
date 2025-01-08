@@ -81,6 +81,30 @@
       "PackagePath": "staticwebassets\\images\\slide2.jpg"
     },
     {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\jquery-ajax-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\jquery-ajax-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\jquery-ajax-unobtrusive\\README.md",
+      "PackagePath": "staticwebassets\\jquery-ajax-unobtrusive\\README.md"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\jquery-ajax-unobtrusive\\dist\\jquery.unobtrusive-ajax.js",
+      "PackagePath": "staticwebassets\\jquery-ajax-unobtrusive\\dist\\jquery.unobtrusive-ajax.js"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\jquery-ajax-unobtrusive\\dist\\jquery.unobtrusive-ajax.min.js",
+      "PackagePath": "staticwebassets\\jquery-ajax-unobtrusive\\dist\\jquery.unobtrusive-ajax.min.js"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\jquery-ajax-unobtrusive\\package.json",
+      "PackagePath": "staticwebassets\\jquery-ajax-unobtrusive\\package.json"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\js\\jquery.unobtrusive-ajax.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.unobtrusive-ajax.min.js"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

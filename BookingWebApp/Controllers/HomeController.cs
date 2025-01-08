@@ -25,6 +25,53 @@ namespace BookingWebApp.Controllers
             };
             return View(homeVM);
         }
+        [HttpPost]
+        public IActionResult Index(HomeVM homeVM)
+        {
+            homeVM.villaList = _unitOfWork.Villa.GetAll(includeProperties: "Amenities");
+              foreach(var villa in homeVM.villaList)
+            {
+                if(homeVM.CheckInDate > DateOnly.FromDateTime(DateTime.Now))
+                {
+                    villa.IsAvailable = true;
+                }
+                else
+                {
+                    villa.IsAvailable = false;
+                }
+            }
+            
+            return View(homeVM);
+        }
+        public IActionResult GetVillaBydate(int nights, DateOnly checkInDate, HomeVM homeVM)
+        {
+            var villaList = _unitOfWork.Villa.GetAll(includeProperties: "Amenities");
+            foreach (var villa in villaList)
+            {
+                if (checkInDate > DateOnly.FromDateTime(DateTime.Now))
+                {
+                    villa.IsAvailable = true;
+                }
+                else
+                {
+                    villa.IsAvailable = false;
+                }
+
+             
+
+            }
+            HomeVM homeVM1 = new()
+            {
+                Night = nights,
+                CheckInDate = checkInDate,
+                villaList = villaList
+            };
+            return PartialView("_VillaList",homeVM1);
+        }
+
+
+
+        
 
         public IActionResult Privacy()
         {

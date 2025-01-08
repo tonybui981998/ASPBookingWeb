@@ -39,5 +39,7 @@ namespace BookingWebApp.Domain.Entities
 
         [ValidateNever]
         public IEnumerable<Amenity> Amenities { get; set; }
+        [NotMapped]
+        public bool IsAvailable { get; set; } 
     }
 }
