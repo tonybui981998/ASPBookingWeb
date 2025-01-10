@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\css\\spinner.css",
+      "PackagePath": "staticwebassets\\css\\spinner.css"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

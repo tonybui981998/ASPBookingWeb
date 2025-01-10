@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nbES9P9tgNnV/8GquxN2pBCmoZMNagOcCbRpmgnxd58=",
+  "Hash": "wtKYZL3smGut/EN3IKRMB9UjQJAi1pe74XwYQE6Yp28=",
   "Source": "BookingWebApp",
   "BasePath": "_content/BookingWebApp",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\css\\spinner.css",
+      "SourceId": "BookingWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\",
+      "BasePath": "_content/BookingWebApp",
+      "RelativePath": "css/spinner.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\spinner.css"
     },
     {
       "Identity": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\favicon.ico",

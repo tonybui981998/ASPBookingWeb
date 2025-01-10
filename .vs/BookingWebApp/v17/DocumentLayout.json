@@ -6,16 +6,7 @@
       "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\views\\shared\\_villalist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26A0ED88-9505-4CAB-976F-485CA5043750}|BookingWebApp.Domain\\BookingWebApp.Domain.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp.domain\\entities\\villa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00A251E0-6E2E-4490-BB17-D681FC1A2555}|BookingWebApp\\BookingWebApp.csproj|\\\\mac\\home\\desktop\\bookingwebapp\\bookingwebapp\\wwwroot\\css\\spinner.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,61 +42,22 @@
               "RelativeDocumentMoniker": "BookingWebApp\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "BookingWebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABMAAADAzszMzAwswDwAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAwwC0AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T12:22:23.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_VillaList.cshtml",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Shared\\_VillaList.cshtml",
-              "RelativeDocumentMoniker": "BookingWebApp\\Views\\Shared\\_VillaList.cshtml",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Shared\\_VillaList.cshtml",
-              "RelativeToolTip": "BookingWebApp\\Views\\Shared\\_VillaList.cshtml",
-              "ViewState": "AQIAADcAAAAAAAAAAAAswFgAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T11:57:27.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Villa.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Domain\\Entities\\Villa.cs",
-              "RelativeDocumentMoniker": "BookingWebApp.Domain\\Entities\\Villa.cs",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp.Domain\\Entities\\Villa.cs",
-              "RelativeToolTip": "BookingWebApp.Domain\\Entities\\Villa.cs",
-              "ViewState": "AQIAABQAAACgZmZmZqYywCoAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T11:26:14.386Z",
+              "WhenOpened": "2025-01-10T02:57:37.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookingWebApp\\Views\\Home\\Index.cshtml",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "BookingWebApp\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAwwCcAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T11:23:22.425Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "BookingWebApp\\Controllers\\HomeController.cs",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "BookingWebApp\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAC0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T11:22:46.194Z",
+              "Title": "spinner.css",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\css\\spinner.css",
+              "RelativeDocumentMoniker": "BookingWebApp\\wwwroot\\css\\spinner.css",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\BookingWebApp\\BookingWebApp\\wwwroot\\css\\spinner.css",
+              "RelativeToolTip": "BookingWebApp\\wwwroot\\css\\spinner.css",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAmwFgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-10T02:55:39.894Z",
               "EditorCaption": ""
             }
           ]
